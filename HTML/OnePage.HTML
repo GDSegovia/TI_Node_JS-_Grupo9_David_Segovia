@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Walkers</title>
+    <link rel="stylesheet" href="/CSS/Estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800|Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="Logo" src="/Imagenes/LgoDefinitivo.jpg" alt="Menú">
+            <ul>
+                <li class="menu"><a href="#principal">Inicio</a></li>
+                <li class="menu"><a href="#servicios">Servicios</a></li>
+                <li class="menu"><a href="#nosotros">Nosotros</a></li>
+                <li class="menu"><a href="#contacto">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección principal -->
+        <section id="principal" class="section">
+            <div class="container">
+                <h1 class="nombrepagina">Dog Walkers</h1>
+                <div class="image-container left">
+                    <div class="text-overlay top-left">Proveemos amor y cuidado. ¡Lo que tu perro merece!</div>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="section">
+            <h1 class ="h1">Servicios</h1>
+            <div class="servicio">
+                <img src="/Imagenes/SHospedaje.jpg" alt="Servicio 1">
+                <div class="descripcion">
+                    <h2>Hospedaje canino</h2>
+                    <p class="parrafoservicio">Contamos con un predio de 10 jardines donde los perros están sueltos durante todo el día separados por tamaño y afinidad, formando grupos homogéneos garantizando así tranquilidad en los paseos. Al caer el sol las mascotas pernoctan en caniles dormitorios ambientados según la época del año, donde descansan luego de un día de intensa recreación. Los caniles dormitorios cuentan con un sector interno con su cama y un sector externo para que el perro pueda salir cuando quiera de acuerdo a su estilo de vida.</p>
+                </div>
+                <button onclick="completarFormulario()">Seleccionar</button>
+            </div>
+            <div class="servicio">
+                <img src="/Imagenes/SDiadecampoparaellos.jpg" alt="Servicio 2">
+                <div class="descripcion">
+                    <h2>Día de campo para ellos</h2>
+                    <p class="parrafoservicio">Es un servicio de socialización canina, donde el perro interactúa con sus pares mejorando su comportamiento en casa, ya que gasta su energía. Tu mascota es retirada por la mañana en nuestra camioneta y en el predio, (totalmente cercado) podrán correr y relacionarse entre sus pares bajo supervisión permanente. Por la tarde, son regresados a sus casas gracias a nuestro servicio de traslado.</p>
+                </div>
+                <button onclick="completarFormulario()">Seleccionar</button>
+            </div>
+            <div class="servicio">
+                <img src="/Imagenes/Stralados.jpg" alt="Servicio 3">
+                <div class="descripcion">
+                    <h2>Traslados</h2>
+                    <p class="parrafoservicio">Nuestra camioneta es vital para el correcto traslado de su mascota y le brinda la comodidad a nuestros clientes para no tener que movilizarse de su domicilio hasta nuestro predio.</p>
+                </div>
+                <button onclick="completarFormulario()">Seleccionar</button>
+            </div>
+            <div class="servicio">
+                <img src="/Imagenes/SPaseoscostos.jpg" alt="Servicio 4">
+                <div class="descripcion">
+                    <h2>Paseos cortos</h2>
+                    <p class="parrafoservicio">El servicio de paseos cortos para mascotas ofrece caminatas regulares y controladas, proporcionando ejercicio, socialización y diversión. Ideal para mantener a tu mascota activa y saludable, con la seguridad de estar acompañada por un paseador profesional y cariñoso. ¡Perfecto para dueños ocupados!</p>
+                </div>
+                <button onclick="completarFormulario()">Seleccionar</button>
+            </div>
+        </section>
+
+        <br><br><br><br><br><br>
+
+        <!-- Sección Nosotros -->
+        <h1 class ="h1">Conócenos</h1>
+        <section id="nosotros" class="nosotros">
+        <br>
+            <p>Un grupo humano que ama a tu mascota, tanto como vos</p>
+            <br>
+            
+            <!-- Sección de fotos del personal -->
+            <section id="personal" class="personal">
+                <div class="foto-personal">
+                    <img src="/Imagenes/Persona1.jpg" alt="Personal 1">
+                </div>
+                <div class="foto-personal">
+                    <img src="/Imagenes/Persona2.jpg" alt="Personal 2">
+                </div>
+                <div class="foto-personal">
+                    <img src="/Imagenes/Persona3.jpg" alt="Personal 3">
+                </div>
+                <div class="foto-personal">
+                    <img src="/Imagenes/Persona4.jpg" alt="Personal 4">
+                </div>
+            </section>
+            
+            <section id="descripcion">
+                <div>
+                    <h3>Nosotros</h3>
+                    <p>Somos una empresa dedicada al cuidado de mascotas desde hace más de 10 años. Nuestro objetivo es garantizar el bienestar y la felicidad de cada animalito que llega a nuestras manos.</p>
+                </div>
+                
+                <!-- Sección de enlace de dirección -->
+                <div>
+                    <h3>Dónde estamos</h3>
+                    <p>Estamos ubicados en la siguiente dirección:</p>
+                    <p>Calle Principal, Número 123</p>
+                    <p>Ciudad, País</p>
+                </div>
+            </section>
+        </section>
+
+        <br><br><br><br><br><br>
+
+        <!-- Sección de contacto -->
+        <h1 class ="h1">Contáctanos</h1>
+        <section id="contacto" class="section contacto">
+            <form id="registroForm" class="formulario" action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div>
+                    <label for="preferencias">Preferencias:</label>
+                    <select id="preferencias" name="preferencias" required>
+                        <option value="">Seleccionar</option>
+                        <option value="opcion1">Hospedaje canino</option>
+                        <option value="opcion2">Día de campo para ellos</option>
+                        <option value="opcion3">Traslados</option>
+                        <option value="opcion4">Paseos cortos</option>
+                    </select>
+                </div>
+                <div class="button-container">
+                    <label for="imagen">Compartenos una imagen de tu mascota:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                </div>                
+                <div>
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Aceptar política de privacidad</label>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </section>
+
+        <br><br><br><br><br><br>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="telefono">
+                <p>Llámanos<br>Teléfono: 0-800-2255221</p>
+            </div>
+            <div class="mail">
+                <p>servicioscaninos@DogWalkers.com</p>
+            </div>
+            <div class="politicas">
+                <a href="#">Políticas y Condiciones</a>
+            </div>
+            <div class="redes-sociales">
+                <a href="#"><img src="/Imagenes/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/Imagenes/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function completarFormulario() {
+            // Simplemente redirecciona a la página de registro
+            window.location.href = "#contacto";
+        }
+    </script>
+</body>
+</html>
